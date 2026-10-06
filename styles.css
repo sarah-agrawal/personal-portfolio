@@ -1,3 +1,4 @@
+/* ===== Colors ===== */
 :root {
     --bg: #F6F4EF;
     --ink: #151515;
@@ -6,6 +7,7 @@
     --accent: #B08A4F;
 }
 
+/* ===== Page basics ===== */
 body {
     margin: 0;
     background: var(--bg);
@@ -18,6 +20,7 @@ a {
     text-decoration: none;
 }
 
+/* ===== Nav ===== */
 header {
     max-width: 1200px;
     margin: 0 auto;
@@ -28,134 +31,399 @@ header {
 }
 
 .logo {
-  font-size: 17px;
-  font-weight: 500;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 nav ul {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: var(--muted);
+}
+
+nav a:hover {
+    color: var(--ink);
 }
 
 .resume-btn {
-  color: var(--ink);
-  border: 1px solid var(--ink);
-  border-radius: 999px;
-  padding: 9px 18px;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    padding: 9px 18px;
 }
 
+/* ===== Hero ===== */
 .hero {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 72px 32px 120px;
-  display: flex;
-  align-items: center;
-  gap: 72px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 32px 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
 }
 
 .hero-text {
-  flex: 1;
+    flex: 0 1 620px;
+    min-width: 0;
 }
 
 h1 {
-  margin: 0;
-  font-size: 88px;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -3.5px;
+    margin: 0;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -3px;
 }
 
 .name {
-  font-family: 'Mrs Saint Delafield', cursive;
-  font-weight: 400;
-  font-size: 150px;
-  letter-spacing: 0;
-  color: var(--accent);
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-weight: 400;
+    font-size: 136px;
+    letter-spacing: 0;
+    color: var(--accent);
 }
 
 .s {
     font-family: 'Allura', cursive;
-    font-size: 136px;
+    font-size: 124px;
 }
 
 .hero-text p {
-  margin: 16px 0 0;
-  font-size: 23px;
-  line-height: 1.5;
-  color: #3A3835;
-  max-width: 620px;
-}
-
-.buttons {
-  display: flex;
-  gap: 14px;
-  margin-top: 40px;
-}
-
-.btn-dark, .btn-outline {
-  border-radius: 999px;
-  padding: 15px 26px;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.btn-dark {
-  background: var(--ink);
-  color: var(--bg);
-}
-
-.btn-outline {
-  border: 1px solid #CFC8BC;
-}
-
-.hero-photo {
-  width: 100%;
-  max-width: 540px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 22px;
+    margin: 16px 0 0;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #3A3835;
+    max-width: 600px;
 }
 
 .hero-text .now {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 30px;
-  font-size: 15px;
-  color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: var(--muted);
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #5B8C5A;
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #5B8C5A;
+}
+
+.buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 40px;
+}
+
+.btn-dark,
+.btn-outline {
+    border-radius: 999px;
+    padding: 15px 26px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-dark {
+    background: var(--ink);
+    color: var(--bg);
+}
+
+.btn-outline {
+    border: 1px solid #CFC8BC;
 }
 
 .socials {
-  display: flex;
-  gap: 26px;
-  list-style: none;
-  padding: 0;
-  margin: 28px 0 0;
-  font-size: 15px;
-  color: var(--muted);
-}
-
-.socials a:hover {
-  color: var(--ink);
+    display: flex;
+    gap: 26px;
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0;
+    font-size: 15px;
+    color: var(--muted);
 }
 
 .socials a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
+.socials a:hover {
+    color: var(--ink);
+}
 
+.hero-photo {
+    flex: 0 0 440px;
+    width: 440px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+//* ===== Experience ===== */
+nav a.active {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.cursive {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--accent);
+    padding: 0 10px 0 4px;
+}
+
+.dots {
+    background-image: radial-gradient(rgba(21, 21, 21, .035) 1.3px, transparent 1.5px);
+    background-size: 24px 24px;
+}
+
+.exp {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 32px 32px;
+}
+
+.page-title {
+    margin: 0 0 44px;
+    font-size: 68px;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -2.6px;
+}
+
+.page-title .cursive {
+    font-size: 104px;
+    line-height: .9;
+    vertical-align: -11px;
+}
+
+/* ----- Timeline ----- */
+.timeline {
+    list-style: none;
+    margin: 0 0 0 9px;
+    padding: 0 0 0 34px;
+    border-left: 3px solid var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.job {
+    position: relative;
+    background: #FFF;
+    border: 1px solid #E6DFD5;
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow: 0 1px 2px rgba(28, 27, 31, .04), 0 16px 36px -18px rgba(28, 27, 31, .2);
+}
+
+.marker {
+    position: absolute;
+    left: -46px;
+    top: 26px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #FFF;
+    border: 1px solid #E6DFD5;
+}
+
+.marker.current {
+    background: var(--accent);
+}
+
+.job-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.job-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.job-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: #E9E4DA;
+    border: 1px solid #E6DFD5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.job h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.role {
+    margin: 2px 0 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.date {
+    background: #DCD8CF;
+    border: 1px solid #E6DFD5;
+    border-radius: 999px;
+    padding: 5px 12px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.job-desc {
+    margin: 14px 0 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.job-points {
+    margin: 12px 0 0;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+/* ----- Giving back ----- */
+.giving {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 56px 32px 96px;
+}
+
+.giving h2 {
+    margin: 0;
+    font-size: 46px;
+    font-weight: 500;
+    letter-spacing: -1.6px;
+}
+
+.giving h2 .cursive {
+    font-size: 72px;
+    line-height: .9;
+    vertical-align: -8px;
+}
+
+.giving-intro {
+    margin: 14px 0 18px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4A4742;
+    max-width: 600px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 28px;
+    padding: 7px 14px;
+    border: 1px solid #E6DFD5;
+    border-radius: 999px;
+    background: #FFF;
+    font-size: 13px;
+    color: #4A4742;
+}
+
+.lead-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    grid-auto-rows: 1fr;
+}
+
+.lead {
+    background: #FFF;
+    border: 1px solid #E6DFD5;
+    border-radius: 18px;
+    padding: 22px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.lead-icon {
+    flex: 0 0 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F1ECE3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lead-icon svg {
+    width: 19px;
+    height: 19px;
+}
+
+.lead-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.lead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.lead h3 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: -.3px;
+}
+
+.lead-date {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.lead-role {
+    margin: 3px 0 0;
+    font-size: 14px;
+    color: var(--accent);
+}
+
+.lead ul {
+    margin: 12px 0 0;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4A4742;
+}
+
+.lead li {
+    margin-bottom: 3px;
+}
