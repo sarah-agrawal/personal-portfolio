@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Sarah Agrawal in AI, machine learning and software.">
+  <title>Projects | Sarah Agrawal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Mrs+Saint+Delafield&family=Allura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dots">
+
+  <header>
+    <a href="index.html" class="logo">Sarah Agrawal</a>
+    <nav>
+      <ul>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="resume.pdf" target="_blank" class="resume-btn">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="exp">
+    <h1 class="page-title">Things I've <span class="cursive">built!</span></h1>
+
+    <div class="project-grid">
+      <article class="project">
+  <img src="images/verity.svg" alt="Verity project graphic">
+  <div class="project-body">
+    <p class="project-meta">ai + web · 2026</p>
+    <h2>Verity</h2>
+    <p class="project-desc">An AI fact-checker for financial reports. It pulls every numeric claim from an AI-written summary, retrieves the matching passage from the company's SEC 10-K filing, and labels each claim verified, wrong or unsupported with the source quote.</p>
+    <ul class="tags"><li>react</li><li>express</li><li>postgresql</li><li>pgvector</li><li>rag</li></ul>
+    <a href="https://github.com/sarah-agrawal/verity" target="_blank" class="project-link">GitHub ↗</a>
+  </div>
+</article>
+
+<article class="project">
+  <img src="images/rallyiq.svg" alt="RallyIQ project graphic">
+  <div class="project-body">
+    <p class="project-meta">ml · research · 2026</p>
+    <h2>RallyIQ</h2>
+    <p class="project-desc">A shot-outcome model for professional badminton trained on 81,000+ strokes from 94 matches. A causal Transformer and XGBoost ensemble spots winning shots with 0.84 AUC on 19 unseen matches, and a Streamlit app replays rallies and recommends the best realistic shot from any position.</p>
+    <ul class="tags"><li>python</li><li>pytorch</li><li>xgboost</li><li>shap</li><li>streamlit</li></ul>
+    <a href="https://github.com/sarah-agrawal/rallyiq" target="_blank" class="project-link">GitHub ↗</a>
+    <a href="https://rallyiq.streamlit.app/" target="_blank" class="project-link">Live app ↗</a>
+</div>
+</article>
+
+<article class="project">
+  <img src="images/byow.svg" alt="Build Your Own World project graphic">
+  <div class="project-body">
+    <p class="project-meta">java · game · 2026</p>
+    <h2>Build Your Own World</h2>
+    <p class="project-desc">A Java world engine that procedurally carves connected rooms and hallways from a seed, guaranteeing every tile is reachable and every seed rebuilds the same world. Includes a real-time tile renderer, live HUD, save and load, dynamic lighting and procedural music.</p>
+    <ul class="tags"><li>java</li><li>procedural generation</li></ul>
+    <p class="project-note">Code available on request</p>
+  </div>
+</article>
+
+<article class="project">
+  <img src="images/ngordnet.svg" alt="Ngordnet project graphic">
+  <div class="project-body">
+    <p class="project-meta">java · data · 2026</p>
+    <h2>Ngordnet</h2>
+    <p class="project-desc">A word-history explorer built on a 300MB Google Books corpus. A TreeMap-backed index answers repeated frequency queries without re-reading data, and a hand-built WordNet graph finds related words through traversal, served to a JavaScript frontend over a Jetty REST API.</p>
+    <ul class="tags"><li>java</li><li>graphs</li><li>jetty</li></ul>
+    <p class="project-note">Code available on request</p>
+  </div>
+</article>
+
+<article class="project">
+  <img src="images/scheme.svg" alt="Scheme interpreter graphic">
+  <div class="project-body">
+    <p class="project-meta">python · interpreters · 2025</p>
+    <h2>Scheme Interpreter</h2>
+    <p class="project-desc">The core of a Scheme interpreter in Python, with a mutually recursive eval/apply loop, environment frames for lexical scoping, dynamically scoped mu procedures and 8 special forms including define, lambda, cond and short-circuiting and/or.</p>
+    <ul class="tags"><li>python</li><li>recursion</li><li>interpreters</li></ul>
+    <p class="project-note">Code available on request</p>
+  </div>
+</article>
+    </div>
+  </main>
+
+</body>
+</html>

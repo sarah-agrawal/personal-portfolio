@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 400 280"><rect x="-40" y="-40" width="400" height="280" fill="#EEEAE3"/>
+  <rect x="16" y="16" width="288" height="168" rx="10" fill="#151515"/>
+  <text x="34" y="52" font-family="monospace" font-size="15" fill="#E9E4DA">scm&gt;</text>
+  <text x="84" y="52" font-family="monospace" font-size="15" fill="#FFFFFF">(define (sq x)</text>
+  <text x="84" y="74" font-family="monospace" font-size="15" fill="#FFFFFF">  (* x x))</text>
+  <text x="34" y="98" font-family="monospace" font-size="15" fill="#DCD8CF">sq</text>
+  <text x="34" y="128" font-family="monospace" font-size="15" fill="#E9E4DA">scm&gt;</text>
+  <text x="84" y="128" font-family="monospace" font-size="15" fill="#FFFFFF">(sq 12)</text>
+  <text x="34" y="152" font-family="monospace" font-size="15" fill="#B08A4F">144</text>
+  <rect x="34" y="162" width="10" height="16" fill="#E9E4DA"/>
+  <text x="228" y="128" font-family="serif" font-size="80" fill="#B08A4F" fill-opacity=".5">λ</text>
+</svg>

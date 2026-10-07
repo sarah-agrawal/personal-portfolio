@@ -311,6 +311,17 @@ nav a.active {
     line-height: 1.65;
 }
 
+.job-points a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.job-points a:hover {
+    color: var(--ink);
+}
+
 /* ----- Giving back ----- */
 .giving {
     max-width: 1000px;
@@ -426,4 +437,89 @@ nav a.active {
 
 .lead li {
     margin-bottom: 3px;
+}
+
+/* ===== Projects ===== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-bottom: 96px;
+}
+
+.project {
+    background: #FFF;
+    border: 1px solid #E6DFD5;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(28, 27, 31, .04), 0 16px 36px -18px rgba(28, 27, 31, .2);
+}
+
+.project img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-bottom: 1px solid #E6DFD5;
+}
+
+.project-body {
+    padding: 20px 22px 24px;
+}
+
+.project-meta {
+    margin: 0;
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.project h2 {
+    margin: 6px 0 8px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
+
+.project-desc {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--muted);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+}
+
+.tags li {
+    background: #F5F0E8;
+    border: 1px solid #E6DFD5;
+    border-radius: 999px;
+    padding: 4px 10px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--ink);
+}
+
+.project-note {
+    margin: 18px 0 0;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.project-link + .project-link {
+    margin-left: 16px;
 }

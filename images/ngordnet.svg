@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 400 280"><rect x="-40" y="-40" width="400" height="280" fill="#DCD8CF"/>
+  <rect x="14" y="20" width="170" height="160" rx="10" fill="#FFFFFF" stroke="#151515" stroke-width="3"/>
+  <path d="M30 160 L55 140 L80 146 L105 110 L130 118 L155 70 L170 60" stroke="#B08A4F" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30 165 L55 160 L80 150 L105 150 L130 135 L155 130 L170 120" stroke="#151515" stroke-width="3" fill="none" stroke-dasharray="6 6"/>
+  <text x="30" y="44" font-family="monospace" font-size="12" fill="#151515">"cat" 1800-2000</text>
+  <path d="M240 60l-18 46M260 60l18 46M222 133l20 30" stroke="#151515" stroke-width="3"/>
+  <circle cx="250" cy="44" r="18" fill="#FFFFFF" stroke="#151515" stroke-width="3"/>
+  <circle cx="216" cy="120" r="14" fill="#E9E4DA" stroke="#151515" stroke-width="3"/>
+  <circle cx="284" cy="120" r="14" fill="#E9E4DA" stroke="#151515" stroke-width="3"/>
+  <circle cx="250" cy="174" r="11" fill="#FFFFFF" stroke="#151515" stroke-width="3"/>
+</svg>
