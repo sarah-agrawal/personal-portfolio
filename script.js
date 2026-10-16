@@ -1,0 +1,1 @@
+status.textContent = `Thanks ${name}, your message was sent.`;
