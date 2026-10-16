@@ -7,7 +7,7 @@
   <title>Interests | Sarah Agrawal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Mrs+Saint+Delafield&family=Allura&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body class="dots">
 
@@ -28,32 +28,26 @@
 
     <div class="hobby-grid">
       <article class="hobby">
-        <p class="project-meta">art</p>
         <h2>Knife painting</h2>
         <p class="project-desc">Painting with palette knives.</p>
       </article>
       <article class="hobby">
-        <p class="project-meta">dance</p>
         <h2>Dance</h2>
         <p class="project-desc">Bharatanatyam, Bollywood and hip hop.</p>
       </article>
       <article class="hobby">
-        <p class="project-meta">sport</p>
         <h2>Badminton</h2>
         <p class="project-desc">Playing with friends on weekends.</p>
       </article>
       <article class="hobby">
-        <p class="project-meta">food</p>
         <h2>Baking &amp; cooking</h2>
         <p class="project-desc">Baking desserts and cooking spicy food.</p>
       </article>
       <article class="hobby">
-        <p class="project-meta">film</p>
         <h2>Movies</h2>
         <p class="project-desc">True crime, mysteries and Bollywood classics.</p>
       </article>
       <article class="hobby">
-        <p class="project-meta">travel</p>
         <h2>Travel</h2>
         <p class="project-desc">Recently London, Spain and Italy.</p>
       </article>
@@ -63,15 +57,22 @@
       <h2>Contact</h2>
 
       <form id="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" maxlength="300" required></textarea>
-        <p class="char-count"><span id="count">0</span>/300</p>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" maxlength="300" placeholder="Write your message" required></textarea>
+          <p class="char-count"><span id="count">0</span>/300</p>
+        </div>
 
         <button type="submit" class="btn-dark">Send</button>
       </form>
