@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sarah Agrawal's hobbies and interests.">
-  <title>Interests | Sarah Agrawal</title>
+  <meta name="description" content="Projects by Sarah Agrawal in AI, machine learning and software.">
+  <title>Projects | Sarah Agrawal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Mrs+Saint+Delafield&family=Allura&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="dots">
 
@@ -24,61 +24,66 @@
   </header>
 
   <main class="exp">
-    <h1 class="page-title">My <span class="cursive">interests</span></h1>
+    <h1 class="page-title">Things I've <span class="cursive">built!</span></h1>
 
-    <div class="hobby-grid">
-      <article class="hobby">
-        <p class="project-meta">art</p>
-        <h2>Knife painting</h2>
-        <p class="project-desc">Painting with palette knives.</p>
-      </article>
-      <article class="hobby">
-        <p class="project-meta">dance</p>
-        <h2>Dance</h2>
-        <p class="project-desc">Bharatanatyam, Bollywood and hip hop.</p>
-      </article>
-      <article class="hobby">
-        <p class="project-meta">sport</p>
-        <h2>Badminton</h2>
-        <p class="project-desc">Playing with friends on weekends.</p>
-      </article>
-      <article class="hobby">
-        <p class="project-meta">food</p>
-        <h2>Baking &amp; cooking</h2>
-        <p class="project-desc">Baking desserts and cooking spicy food.</p>
-      </article>
-      <article class="hobby">
-        <p class="project-meta">film</p>
-        <h2>Movies</h2>
-        <p class="project-desc">True crime, mysteries and Bollywood classics.</p>
-      </article>
-      <article class="hobby">
-        <p class="project-meta">travel</p>
-        <h2>Travel</h2>
-        <p class="project-desc">Recently London, Spain and Italy.</p>
-      </article>
+    <div class="project-grid">
+      <article class="project">
+  <img src="images/verity.svg" alt="Verity project graphic">
+  <div class="project-body">
+    <p class="project-meta">ai + web · 2026</p>
+    <h2>Verity</h2>
+    <p class="project-desc">An AI fact-checker for financial reports. It pulls every numeric claim from an AI-written summary, retrieves the matching passage from the company's SEC 10-K filing, and labels each claim verified, wrong or unsupported with the source quote.</p>
+    <ul class="tags"><li>react</li><li>express</li><li>postgresql</li><li>pgvector</li><li>rag</li></ul>
+    <a href="https://github.com/sarah-agrawal/verity" target="_blank" class="project-link">GitHub ↗</a>
+  </div>
+</article>
+
+<article class="project">
+  <img src="images/rallyiq.svg" alt="RallyIQ project graphic">
+  <div class="project-body">
+    <p class="project-meta">ml · research · 2026</p>
+    <h2>RallyIQ</h2>
+    <p class="project-desc">A shot-outcome model for professional badminton trained on 81,000+ strokes from 94 matches. A causal Transformer and XGBoost ensemble spots winning shots with 0.84 AUC on 19 unseen matches, and a Streamlit app replays rallies and recommends the best realistic shot from any position.</p>
+    <ul class="tags"><li>python</li><li>pytorch</li><li>xgboost</li><li>shap</li><li>streamlit</li></ul>
+    <a href="https://github.com/sarah-agrawal/rallyiq" target="_blank" class="project-link">GitHub ↗</a>
+    <a href="https://rallyiq.streamlit.app/" target="_blank" class="project-link">Live app ↗</a>
+</div>
+</article>
+
+<article class="project">
+  <img src="images/byow.svg" alt="Build Your Own World project graphic">
+  <div class="project-body">
+    <p class="project-meta">java · game · 2026</p>
+    <h2>Build Your Own World</h2>
+    <p class="project-desc">A Java world engine that procedurally carves connected rooms and hallways from a seed, guaranteeing every tile is reachable and every seed rebuilds the same world. Includes a real-time tile renderer, live HUD, save and load, dynamic lighting and procedural music.</p>
+    <ul class="tags"><li>java</li><li>procedural generation</li></ul>
+    <p class="project-note">Code available on request</p>
+  </div>
+</article>
+
+<article class="project">
+  <img src="images/ngordnet.svg" alt="Ngordnet project graphic">
+  <div class="project-body">
+    <p class="project-meta">java · data · 2026</p>
+    <h2>Ngordnet</h2>
+    <p class="project-desc">A word-history explorer built on a 300MB Google Books corpus. A TreeMap-backed index answers repeated frequency queries without re-reading data, and a hand-built WordNet graph finds related words through traversal, served to a JavaScript frontend over a Jetty REST API.</p>
+    <ul class="tags"><li>java</li><li>graphs</li><li>jetty</li></ul>
+    <p class="project-note">Code available on request</p>
+  </div>
+</article>
+
+<article class="project">
+  <img src="images/scheme.svg" alt="Scheme interpreter graphic">
+  <div class="project-body">
+    <p class="project-meta">python · interpreters · 2025</p>
+    <h2>Scheme Interpreter</h2>
+    <p class="project-desc">The core of a Scheme interpreter in Python, with a mutually recursive eval/apply loop, environment frames for lexical scoping, dynamically scoped mu procedures and 8 special forms including define, lambda, cond and short-circuiting and/or.</p>
+    <ul class="tags"><li>python</li><li>recursion</li><li>interpreters</li></ul>
+    <p class="project-note">Code available on request</p>
+  </div>
+</article>
     </div>
-
-    <section class="contact">
-      <h2>Contact</h2>
-
-      <form id="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" maxlength="300" required></textarea>
-        <p class="char-count"><span id="count">0</span>/300</p>
-
-        <button type="submit" class="btn-dark">Send</button>
-      </form>
-      <p id="form-status" class="form-status"></p>
-    </section>
   </main>
 
-  <script src="script.js"></script>
 </body>
 </html>
