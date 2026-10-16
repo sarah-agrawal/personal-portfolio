@@ -523,3 +523,74 @@ nav a.active {
 .project-link + .project-link {
     margin-left: 16px;
 }
+
+/* ----- Interests ----- */
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.hobby {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px 24px;
+}
+
+.hobby h2 {
+    margin: 4px 0 8px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact {
+    margin: 72px 0 40px;
+    max-width: 560px;
+}
+
+.contact h2 {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 500;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+#contact-form label {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+#contact-form input,
+#contact-form textarea {
+    font: inherit;
+    padding: 12px 14px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+}
+
+#contact-form button {
+    align-self: flex-start;
+    margin-top: 8px;
+    cursor: pointer;
+    border: none;
+    font: inherit;
+}
+
+.char-count {
+    margin: 0;
+    font-size: 13px;
+    color: var(--muted);
+    text-align: right;
+}
+
+.form-status {
+    color: #5B8C5A;
+}
